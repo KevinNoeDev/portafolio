@@ -1,0 +1,159 @@
+/* Fuentes y Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f0f2f5; /* fondo gris suave */
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #00c894; /* verde para enlaces generales */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* morado a azul */
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .highlight {
+  color: #00c894; /* verde */
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #00c894;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00a07f;
+  cursor: pointer;
+}
+
+/* Secciones */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: transparent;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #2575fc; /* azul */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Habilidades */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+.skill-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Proyectos */
+.project {
+  background: #fff;
+  margin: 25px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.project img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.project h3 {
+  margin-top: 0;
+}
+.tech {
+  font-family: 'Roboto Mono', monospace;
+  color: #2575fc; /* azul para tecnologías */
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Experiencia y Educación */
+.exp-item {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-left: 6px solid;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.exp-blue { border-color: #2575fc; } /* azul para experiencia */
+.exp-purple { border-color: #6a11cb; } /* morado para educación */
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer a { color: #00c894; }
+footer a:hover { color: #00a07f; }
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
